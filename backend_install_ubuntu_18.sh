@@ -19,7 +19,7 @@ if [[ ${is_install} != "y" && ${is_install} != "Y" ]]; then
     exit 0
 fi
 echo "Updatin exsit package..."
-apt clean all && apt autoremove -y && apt update && apt upgrade -y && apt dist-upgrade -y
+apt clean all && apt autoremove -y && apt update && apt dist-upgrade -y
 echo "Install necessary package..."
 apt install git python-setuptools python-pip build-essential ntpdate htop -y
 echo "Please select correct system timezone for your node."
