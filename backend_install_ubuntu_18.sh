@@ -23,7 +23,6 @@ apt clean all && apt autoremove -y && apt update && apt upgrade -y && apt dist-u
 echo "Install necessary package..."
 apt install git python-setuptools python-pip build-essential ntpdate htop -y
 echo "Please select correct system timezone for your node."
-dpkg-reconfigure tzdata
 echo "Installing libsodium..."
 wget https://github.com/jedisct1/libsodium/releases/download/1.0.16/libsodium-1.0.16.tar.gz
 tar xf libsodium-1.0.16.tar.gz && cd libsodium-1.0.16
