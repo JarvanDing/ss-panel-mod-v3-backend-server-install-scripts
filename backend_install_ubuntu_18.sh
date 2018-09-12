@@ -8,7 +8,7 @@ cat << "EOF"
 |__/|__/\_,_/_/_/____/_/_//_/_/\_\ 
 
 Author: YihanH
-Github: https://github.com/YihanH/ss-panel-mod-v3-backend-server-install-scripts                                
+Github: https://github.com/JarvanDing/ss-panel-mod-v3-backend-server-install-scripts                                
 EOF
 echo "Proxy node installation script for Ubuntu 18.04 x64"
 [ $(id -u) != "0" ] && { echo "Error: You must be root to run this script"; exit 1; }
