@@ -68,7 +68,7 @@ if [[ ${is_auto} != "y" ]]; then
 	fi
 fi
 echo "Updatin exsit package..."
-apt clean all && apt autoremove -y && apt update && apt dist-upgrade -y
+apt clean all && apt autoremove -y && apt dist-upgrade -y
 echo "Install necessary package..."
 apt install git python-setuptools python-pip build-essential ntpdate htop -y
 echo "Please select correct system timezone for your node."
