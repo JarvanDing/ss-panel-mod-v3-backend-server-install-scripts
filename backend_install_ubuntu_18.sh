@@ -90,20 +90,7 @@ if [ ! -d "shadowsocks" ]; then
 	echo "Installing Shadowsocksr server from GitHub..."
 	cd /tmp && git clone -b manyuser https://github.com/Anankke/shadowsocks-mod.git
 	mv -f shadowsocks /soft
-else
-	while :; do echo
-		echo -n "The Shadowsocksr server software is already exsit! Do you want to upgrade it?(Y/N)"
-		read is_mu
-		if [[ ${is_mu} != "y" && ${is_mu} != "Y" && ${is_mu} != "N" && ${is_mu} != "n" ]]; then
-			echo -n "Bad answer! Please only input number Y or N"
-		elif [[ ${is_mu} == "y" && ${is_mu} == "Y" ]]; then
-			echo "Upgrading Shadowsocksr server software..."
-			cd shadowsocks && git pull
-			break
-		else
-			exit 0
-		fi
-	done
+
 fi
 cd /soft/shadowsocks
 python -m pip install --upgrade pip
